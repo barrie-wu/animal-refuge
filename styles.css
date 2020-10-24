@@ -71,6 +71,14 @@ img {
     display: block;
 }
 
+section {
+    padding: 100px 0;
+}
+
+figure {
+    margin: 0;
+}
+
 .mainWrapper {
     max-width: 1900x;
     width: 100%;
@@ -98,6 +106,7 @@ img {
 header {
     background-image: url(./assets/image-1.jpg);
     height: 95vh;
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -145,8 +154,6 @@ nav ul li a:hover {
 /* FEATURE */
 .featureStory {
     background-color: #152D20;
-    height: 60vh;
-    border: solid red 1px;
 }
 
 .featureImage {
@@ -155,30 +162,40 @@ nav ul li a:hover {
 }
 
 .featureText {
-    width: 70%;
-    float: right;
+    float: left;
+    margin-left: 20px;
+    width: calc(100% - (300px + 20px));
+    position: relative;
 }
 
 .featureText h2 {
     font-size: 51px;
+    position: absolute;
+    top: -10px;
+}
+
+.featureText p {
+    padding: 50px 0;
 }
 
 .featureText .button {
     background-color: #FCFCFC;
     color: #152D20;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
 }
 
 /* GALLERY */
 .gallery {
     background-color: #C3D3CB;
-    height: 100vh;
-    border: solid red 1px;
 }
 
 .gallery h2 {
     text-align: center;
     color: #152D20;
     font-size: 49px;
+    width: 40%;
 }
 
 .gallery ul li {
