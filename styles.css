@@ -102,7 +102,6 @@ figure {
 }
 
 /* HEADER STYLES */
-
 header {
     background-image: url(./assets/image-1.jpg);
     height: 95vh;
@@ -195,10 +194,17 @@ nav ul li a:hover {
     text-align: center;
     color: #152D20;
     font-size: 49px;
+    margin: 0 auto 100px;
     width: 40%;
 }
 
 .gallery ul li {
     float: left;
-    width: 30%;
+    width: calc((100% - 40px) / 3);
 }
+
+.gallery ul li:nth-child(2) {
+    margin: 0 20px;
+}
+
+/* ABOUT */
