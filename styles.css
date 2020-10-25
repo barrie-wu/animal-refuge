@@ -17,9 +17,9 @@ Dark Green:  #152D20    21, 45, 32
 
 
 
-* {
+/* * {
     border: solid red 1px;
-}
+} */
 
 /* GLOABL STYLES */
 * {
@@ -36,6 +36,12 @@ body {
     color: #FCFCFC;
 }
 
+.featureStory,
+.about,
+.contacts {
+    background-color: #152D20;
+}
+
 h1, h2, h3 {
     font-family: 'Fredericka the Great', cursive;
     text-transform: uppercase;
@@ -46,9 +52,18 @@ h3 {
     font-size: 35px;
 }
 
+h4 {
+    font-size: 22px;
+}
+
 h4, a, input {
     font-family: 'Cormorant Garamond', serif;
     text-transform: uppercase;
+}
+
+header a,
+footer a {
+    font-size: 20px;
 }
 
 .gallery h2, 
@@ -65,7 +80,8 @@ a {
     color: #FCFCFC;
 }
 
-p {
+p, 
+form label {
     font-size: 20px;
     line-height: 29px;
 }
@@ -131,10 +147,6 @@ h1 {
     float: right;
 }
 
-header ul li a {
-    font-size: 22px;
-}
-
 nav ul li {
     float: left;
     margin-right: 20px;
@@ -162,11 +174,6 @@ nav ul li a:hover {
 
 /* MAIN STYLES */
 /* FEATURE */
-.featureStory, 
-.about {
-    background-color: #152D20;
-}
-
 .featureImage {
     width: 300px;
     float: left;
@@ -254,22 +261,68 @@ nav ul li a:hover {
 
 .blogPostImage {
     position: absolute;
-    top: -1px;
     z-index: -1;
     width: 50%;
 }
 
 .blogPostImage1 {
+    top: -1px;
     right: 0;
 }
 
 .blogPostImage2 {
+    bottom: -1px;
     left: 0;
 }
 
 .blogPost article p {
-    margin: 10px auto 47px;
+    margin: 10px auto 45px;
 }
 
+/* CONTACTS */
+.contacts li {
+    float: none;
+    margin-top: 0;
+}
 
+.contacts .wrapper > * {
+    float: left;
+    /* width: calc(100% / 3); */
+}
 
+.contacts nav {
+    width: 20%;
+}
+
+.contacts nav li {
+    margin-top: 3px;
+}
+
+.contacts form {
+    width: 54%;
+    text-align: center;
+}
+
+address {
+    font-style: normal;
+    text-align: right;
+    width: 26%;
+}
+
+#userEmail {
+    font-size: 18px;
+    width: 70%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+form .button {
+    background-color: #000000;
+    border: none;
+}
+
+.copyright {
+    text-align: center;
+    background-color: #000000;
+    padding: 10px;
+}
