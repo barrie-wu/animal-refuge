@@ -54,6 +54,7 @@ h3 {
 
 h4 {
     font-size: 22px;
+    margin-bottom: 10px;
 }
 
 h4, a, input {
@@ -64,6 +65,10 @@ h4, a, input {
 header a,
 footer a {
     font-size: 20px;
+}
+
+i {
+    font-size: 22px;
 }
 
 .gallery h2, 
@@ -263,6 +268,14 @@ nav ul li a:hover {
     position: absolute;
     z-index: -1;
     width: 50%;
+    height: 100%;
+}
+
+.blogPostImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .blogPostImage1 {
@@ -273,6 +286,10 @@ nav ul li a:hover {
 .blogPostImage2 {
     bottom: -1px;
     left: 0;
+}
+
+.blogPostImage2 img {
+    object-position: left;
 }
 
 .blogPost article p {
@@ -287,7 +304,6 @@ nav ul li a:hover {
 
 .contacts .wrapper > * {
     float: left;
-    /* width: calc(100% / 3); */
 }
 
 .contacts nav {
@@ -325,4 +341,69 @@ form .button {
     text-align: center;
     background-color: #000000;
     padding: 10px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1000px) {
+    section {
+        padding: 75px 0;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+
+    .aboutWrapper {
+        width: 80%;
+    }
+
+    header nav ul {
+        float: right;
+    }
+
+    h1 {
+        font-size: 3rem;
+        text-align: left;
+        line-height: normal;
+        margin-top: 20px;
+        float: left;
+        width: 20%;
+    }
+
+    .socials {
+        top: 10%;
+    }
+
+    .gallery h2 {
+        width: 50%;
+        margin-bottom: 75px;
+    }
+
+    h4 {
+        font-size: 3.5rem;
+    }
+
+    .contact h4 {
+        margin-bottom: 0;
+    }
+
+    .contacts .wrapper > * {
+        float: none;
+        width: 100%;
+    }
+
+    .contacts nav ul {
+        text-align: center;
+    }
+
+    .contacts li {
+        display: inline;
+        margin: 5px 25px;
+    }
+
+    .contact, form {
+        text-align: center;
+        margin-top: 50px;
+    }
+    
 }
