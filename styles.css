@@ -140,6 +140,10 @@ figure {
     margin-top: 20px;
 }
 
+.checkbox {
+    display: none;
+}
+
 /* HEADER STYLES */
 header {
     background-image: url(./assets/image-1.jpg);
@@ -497,6 +501,22 @@ form .button {
         visibility: hidden;
     }
 
+    .checkbox {
+        display: block;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        top: 1%;
+        right: 2%;
+        z-index: 2;
+        cursor: pointer;
+        opacity: 0;
+    }
+
+    .checkbox:checked ~ .headerNav ul {
+        visibility: visible;
+    }
+
     .headerNav ul {
         visibility: hidden;
         background-color: #C3D3CB;
@@ -516,7 +536,7 @@ form .button {
 
     .headerNav li:hover,
     .headerNav li:focus {
-        background-color: #152D20 ;
+        background-color: #152D20;
         color: #FCFCFC;
     }
 
@@ -637,7 +657,7 @@ form .button {
 
 @media (max-width: 460px) {
     .footerNav ul li {
-            margin: 6px;
+            margin: 4px;
     }
 }
 
