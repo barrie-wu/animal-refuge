@@ -425,6 +425,21 @@ form .button {
 
 /* TABLET RESOLUTION */
 @media (max-width: 800px) {
+    .socials {
+        top: 25%;
+        right: 5%;
+    }
+
+    .socials ul li {
+        margin: 20px 0;
+    }
+
+    i {
+        font-size: 3rem;
+    }
+
+    .socials 
+
     .featureStory .wrapper > * {
         float: none;
     }
