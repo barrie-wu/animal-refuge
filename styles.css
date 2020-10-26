@@ -350,9 +350,9 @@ form .button {
 
 /* TABLET MEDIA QUERIES */
 /* BREAK FIXES */
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
     header {
-        background-position-x: -400px;
+        background-position-x: -300px;
     }
 
     section {
@@ -622,7 +622,7 @@ form .button {
 
 @media (max-width: 460px) {
     .footerNav ul li {
-            margin: 4px;
+            margin: 6px;
     }
 }
 
