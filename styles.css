@@ -169,12 +169,6 @@ nav ul li {
     margin-top: 25px;
 }
 
-
-nav ul li a:hover,
-nav ul li a:focus {
-    border-bottom: solid #FCFCFC 2px;
-}
-
 .socials {
     position: absolute;
     right: 2%;
@@ -534,16 +528,17 @@ form .button {
         color: #000000;
     }
 
-    .headerNav li:hover,
-    .headerNav li:focus {
+    .headerNav ul li:hover,
+    .headerNav ul li:focus,
+    .headerNav ul li:active {
         background-color: #152D20;
         color: #FCFCFC;
     }
 
     .headerNav li:hover a,
-    .headerNav li:focus a {
+    .headerNav li:focus a,
+    .headerNav li:active a {
         color: #FCFCFC;
-        border: none;
     }
 
 /* MOBILE FEATURE */
